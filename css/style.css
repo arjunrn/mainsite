@@ -223,7 +223,17 @@ a:visited{
 }
 header{clear:both;width:860px;margin:0 auto;}
 div.header-left , div.header-right{float:left;}
-div.header-left{width:160px;background:url(images/header_small.jpg) no-repeat 0 0;}
+div.header-left{
+    width:135px;
+    background:url(/mainsite/images/header_small.jpg) no-repeat 0 0;
+    height:150px;
+    margin-top:10px;
+    margin-right:20px;
+    margin-bottom:10px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
 div.header-right{width:700px;}
 #construction-notice {margin:20px auto;text-align:center;}
 #excuse{width:500px;margin:10px auto;text-align:center;}
