@@ -41,7 +41,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
  * Also: hot pink!
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: #182567; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
 
@@ -200,14 +200,110 @@ table { border-collapse: collapse; border-spacing: 0; }
    Primary styles
    Author: 
    ========================================================================== */
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('/mainsite/css/fonts/Roboto-Regular-webfont.eot');
+    src: url('/mainsite/css/fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/mainsite/css/fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('/mainsite/css/fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('/mainsite/css/fonts/Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'RobotoItalic';
+    src: url('/mainsite/css/fonts/Roboto-Italic-webfont.eot');
+    src: url('/mainsite/css/fonts/Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/mainsite/css/fonts/Roboto-Italic-webfont.woff') format('woff'),
+         url('/mainsite/css/fonts/Roboto-Italic-webfont.ttf') format('truetype'),
+         url('/mainsite/css/fonts/Roboto-Italic-webfont.svg#RobotoItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('/mainsite/css/fonts/Roboto-Bold-webfont.eot');
+    src: url('/mainsite/css/fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/mainsite/css/fonts/Roboto-Bold-webfont.woff') format('woff'),
+         url('/mainsite/css/fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('/mainsite/css/fonts/Roboto-Bold-webfont.svg#RobotoBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'RobotoBoldItalic';
+    src: url('/mainsite/css/fonts/Roboto-BoldItalic-webfont.eot');
+    src: url('/mainsite/css/fonts/Roboto-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/mainsite/css/fonts/Roboto-BoldItalic-webfont.woff') format('woff'),
+         url('/mainsite/css/fonts/Roboto-BoldItalic-webfont.ttf') format('truetype'),
+         url('/mainsite/css/fonts/Roboto-BoldItalic-webfont.svg#RobotoBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url('/mainsite/css/fonts/Roboto-Condensed-webfont.eot');
+    src: url('/mainsite/css/fonts/Roboto-Condensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/mainsite/css/fonts/Roboto-Condensed-webfont.woff') format('woff'),
+         url('/mainsite/css/fonts/Roboto-Condensed-webfont.ttf') format('truetype'),
+         url('/mainsite/css/fonts/Roboto-Condensed-webfont.svg#RobotoCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'RobotoCondensedItalic';
+    src: url('/mainsite/css/fonts/Roboto-CondensedItalic-webfont.eot');
+    src: url('/mainsite/css/fonts/Roboto-CondensedItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/mainsite/css/fonts/Roboto-CondensedItalic-webfont.woff') format('woff'),
+         url('/mainsite/css/fonts/Roboto-CondensedItalic-webfont.ttf') format('truetype'),
+         url('/mainsite/css/fonts/Roboto-CondensedItalic-webfont.svg#RobotoCondensedItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'RobotoBoldCondensed';
+    src: url('/mainsite/css/fonts/Roboto-BoldCondensed-webfont.eot');
+    src: url('/mainsite/css/fonts/Roboto-BoldCondensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/mainsite/css/fonts/Roboto-BoldCondensed-webfont.woff') format('woff'),
+         url('/mainsite/css/fonts/Roboto-BoldCondensed-webfont.ttf') format('truetype'),
+         url('/mainsite/css/fonts/Roboto-BoldCondensed-webfont.svg#RobotoBoldCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'RobotoBoldCondensedItalic';
+    src: url('/mainsite/css/fonts/Roboto-BoldCondensedItalic-webfont.eot');
+    src: url('/mainsite/css/fonts/Roboto-BoldCondensedItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/mainsite/css/fonts/Roboto-BoldCondensedItalic-webfont.woff') format('woff'),
+         url('/mainsite/css/fonts/Roboto-BoldCondensedItalic-webfont.ttf') format('truetype'),
+         url('/mainsite/css/fonts/Roboto-BoldCondensedItalic-webfont.svg#RobotoBoldCondensedItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
     font-size:16px;
-    font-family:'Lekton', Helvetica, Arial, sans-serif;
+    font-family:'RobotoRegular', Helvetica, Arial, sans-serif;
     background-color:#FFFFFF;
 }
 h1, h2, h3, h4, h5, h6 {
     color:#03323A;
-    font-family: 'Molengo', Georgia, Times, serif;
+    font-family: 'RobotoCondensedItalic', Georgia, Times, serif;
     text-shadow:1px 1px 0 #FFF;
 }
 a{
@@ -221,7 +317,12 @@ a:hover{
 a:visited{
     color:#452F34;
 }
-header{clear:both;width:860px;margin:0 auto;}
+header{
+    clear:both;
+    width:860px;
+    margin:0 auto;
+    margin-top:40px;
+}
 div.header-left , div.header-right{float:left;}
 div.header-left{
     width:135px;
@@ -235,13 +336,63 @@ div.header-left{
     border-radius:5px;
 }
 div.header-right{width:700px;}
+
+div#navigation{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    clear:both;
+    margin:0;
+    padding:0;
+    height:35px;
+    background-image: linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
+background-image: -o-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
+background-image: -moz-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
+background-image: -webkit-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
+background-image: -ms-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.12, rgb(71,71,71)),
+	color-stop(0.58, rgb(110,110,110)),
+	color-stop(0.97, rgb(148,148,148))
+);
+    box-shadow: 0 5px 5px #555555;
+}
+ul.navigation-list{
+    list-style:none;
+    margin: 5px auto;
+    padding:0;
+    display:block;
+    width:800px;
+}
+ul.navigation-list a, ul.navigation-list a:hover , ul.navigation-list a:visited{color:#FFF;}
+ul.navigation-list li{float:left;margin:5px 100px;}
+
+	
+    
+    
 #construction-notice {margin:20px auto;text-align:center;}
 #excuse{width:500px;margin:10px auto;text-align:center;}
 
-#main-title{font-size:40px;margin:5px;float:left;clear:both;}
-#caption{font-size:20px;margin:5px;float:left;clear:both;}
-ul#navigation{list-style:none;float:left;clear:both;margin:0;padding:0;}
-	ul#navigation li{float:left;margin:5px;}
+#main-title{
+    font-size:85px;
+    margin:5px;
+    float:left;
+    clear:both;
+    text-shadow: 2px 2px 3px #555555;
+}
+#caption{
+    font-family:"RobotoCondensed";
+    font-size:35px;
+    margin:5px;
+    float:left;
+    clear:both;
+}
+
 
 #main{
 	clear:both;
@@ -268,6 +419,10 @@ ul#navigation{list-style:none;float:left;clear:both;margin:0;padding:0;}
 div.res-right , div.res-left{float:left;}
 div.res-left{width:200px;padding-top:20px;}
 div.res-right{width:660px;}
+
+li.main-skill{display:block;width:270px;}
+li.skill-odd{clear:left;float:left;}
+li.skill-even{clear:right;float:right;}
 
 /* =============================================================================
    Non-semantic helper classes
