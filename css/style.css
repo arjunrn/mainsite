@@ -347,19 +347,19 @@ div#navigation{
     padding:0;
     height:35px;
     background-image: linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
-background-image: -o-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
-background-image: -moz-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
-background-image: -webkit-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
-background-image: -ms-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
+    background-image: -o-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
+    background-image: -moz-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
+    background-image: -webkit-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
+    background-image: -ms-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
 
-background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	left top,
-	color-stop(0.12, rgb(71,71,71)),
-	color-stop(0.58, rgb(110,110,110)),
-	color-stop(0.97, rgb(148,148,148))
-);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.12, rgb(71,71,71)),
+        color-stop(0.58, rgb(110,110,110)),
+        color-stop(0.97, rgb(148,148,148))
+    );
     box-shadow: 0 5px 5px #555555;
 }
 ul.navigation-list{
@@ -369,8 +369,13 @@ ul.navigation-list{
     display:block;
     width:800px;
 }
-ul.navigation-list a, ul.navigation-list a:hover , ul.navigation-list a:visited{color:#FFF;}
-ul.navigation-list li{float:left;margin:5px 100px;}
+ul.navigation-list a, ul.navigation-list a:hover , ul.navigation-list a:visited{
+    color:#FFF;
+    text-shadow:1px 1px 2px #FFFFFF;
+    font-weight:normal;
+    font-size:20px;
+}
+ul.navigation-list li{float:left;margin:0px 100px;}
 
 	
     
@@ -416,6 +421,7 @@ ul.navigation-list li{float:left;margin:5px 100px;}
     );
 }
 
+div.main-section{padding:20px 0;}
 div.res-right , div.res-left{float:left;}
 div.res-left{width:200px;padding-top:20px;}
 div.res-right{width:660px;}
