@@ -298,13 +298,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 body{
     font-size:16px;
-    font-family:'RobotoRegular', Helvetica, Arial, sans-serif;
-    background-color:#FFFFFF;
+    font-family:'Rosario', Helvetica, Arial, sans-serif;
+    background-color:#22435A;
+    color:#FFF;
 }
 h1, h2, h3, h4, h5, h6 {
-    color:#03323A;
-    font-family: 'RobotoCondensedItalic', Georgia, Times, serif;
-    text-shadow:1px 1px 0 #FFF;
+    color:#FFFFFF;
+    font-family: 'Prociono', Georgia, Times, serif;
+    text-shadow:1px 1px 0 #222222;
 }
 a{
     color:#452F34;
@@ -321,7 +322,7 @@ header{
     clear:both;
     width:860px;
     margin:0 auto;
-    margin-top:40px;
+    margin-top:80px;
 }
 div.header-left , div.header-right{float:left;}
 div.header-left{
@@ -334,6 +335,7 @@ div.header-left{
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
     border-radius:5px;
+    box-shadow:0px 0px 16px #FFF;
 }
 div.header-right{width:700px;}
 
@@ -346,21 +348,21 @@ div#navigation{
     margin:0;
     padding:0;
     height:35px;
-    background-image: linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
-    background-image: -o-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
-    background-image: -moz-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
-    background-image: -webkit-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
-    background-image: -ms-linear-gradient(bottom, rgb(71,71,71) 12%, rgb(110,110,110) 58%, rgb(148,148,148) 97%);
+    background-image: linear-gradient(bottom, rgb(166,166,166) 30%, rgb(201,201,201) 65%, rgb(224,224,224) 89%);
+    background-image: -o-linear-gradient(bottom, rgb(166,166,166) 30%, rgb(201,201,201) 65%, rgb(224,224,224) 89%);
+    background-image: -moz-linear-gradient(bottom, rgb(166,166,166) 30%, rgb(201,201,201) 65%, rgb(224,224,224) 89%);
+    background-image: -webkit-linear-gradient(bottom, rgb(166,166,166) 30%, rgb(201,201,201) 65%, rgb(224,224,224) 89%);
+    background-image: -ms-linear-gradient(bottom, rgb(166,166,166) 30%, rgb(201,201,201) 65%, rgb(224,224,224) 89%);
 
     background-image: -webkit-gradient(
         linear,
         left bottom,
         left top,
-        color-stop(0.12, rgb(71,71,71)),
-        color-stop(0.58, rgb(110,110,110)),
-        color-stop(0.97, rgb(148,148,148))
+        color-stop(0.3, rgb(166,166,166)),
+        color-stop(0.65, rgb(201,201,201)),
+        color-stop(0.89, rgb(224,224,224))
     );
-    box-shadow: 0 5px 5px #555555;
+    box-shadow: 0 5px 5px #999;
 }
 ul.navigation-list{
     list-style:none;
@@ -370,8 +372,8 @@ ul.navigation-list{
     width:800px;
 }
 ul.navigation-list a, ul.navigation-list a:hover , ul.navigation-list a:visited{
-    color:#FFF;
-    text-shadow:1px 1px 2px #FFFFFF;
+    color:#222;
+    text-shadow:1px 1px 2px #444;
     font-weight:normal;
     font-size:20px;
 }
@@ -388,10 +390,9 @@ ul.navigation-list li{float:left;margin:0px 100px;}
     margin:5px;
     float:left;
     clear:both;
-    text-shadow: 2px 2px 3px #555555;
+    text-shadow: 2px 2px 3px #AAA;
 }
 #caption{
-    font-family:"RobotoCondensed";
     font-size:35px;
     margin:5px;
     float:left;
@@ -402,23 +403,18 @@ ul.navigation-list li{float:left;margin:0px 100px;}
 #main{
 	clear:both;
 	width:860px;
-	background-color:#D8EAF1;
 	margin:0 auto;
 	border-radius:15px;
 	padding:15px;
-    background-image: linear-gradient(bottom, rgb(216,234,241) 46%, rgb(175,215,230) 81%);
-    background-image: -o-linear-gradient(bottom, rgb(216,234,241) 46%, rgb(175,215,230) 81%);
-    background-image: -moz-linear-gradient(bottom, rgb(216,234,241) 46%, rgb(175,215,230) 81%);
-    background-image: -webkit-linear-gradient(bottom, rgb(216,234,241) 46%, rgb(175,215,230) 81%);
-    background-image: -ms-linear-gradient(bottom, rgb(216,234,241) 46%, rgb(175,215,230) 81%);
+}
 
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0.46, rgb(216,234,241)),
-        color-stop(0.81, rgb(175,215,230))
-    );
+#main a, #main a:visited{
+    border-bottom: 1px dashed;
+    color:#ff6a6a;
+}
+
+#main a:hover{
+    color:#9c4141;
 }
 
 div.main-section{padding:20px 0;}
@@ -429,6 +425,12 @@ div.res-right{width:660px;}
 li.main-skill{display:block;width:270px;}
 li.skill-odd{clear:left;float:left;}
 li.skill-even{clear:right;float:right;}
+
+td.contact-main{
+    width:200px;
+    padding:15px 0;
+    font-size:20px;
+}
 
 /* =============================================================================
    Non-semantic helper classes
