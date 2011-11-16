@@ -41,7 +41,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
  * Also: hot pink!
  */
 
-::-moz-selection { background: #182567; color: #fff; text-shadow: none; }
+::-moz-selection { background: #FFFFFF; color: #222222; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
 
 
@@ -244,7 +244,7 @@ header{
 div.header-left , div.header-right{float:left;}
 div.header-left{
     width:150px;
-    background:url(/mainsite/images/rage_placeholder.png) no-repeat 0 0;
+    background:url(/mainsite/images/outline.png) no-repeat 0 0;
     height:150px;
     margin-top:10px;
     margin-right:20px;
