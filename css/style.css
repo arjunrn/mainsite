@@ -296,6 +296,17 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 }
 
+@font-face {
+    font-family: 'SocialNetworkingIconsRegular';
+    src: url('/mainsite/css/fonts/socialnetworkingicons-regul-webfont.eot');
+    src: url('/mainsite/css/fonts/socialnetworkingicons-regul-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/mainsite/css/fonts/socialnetworkingicons-regul-webfont.woff') format('woff'),
+         url('/mainsite/css/fonts/socialnetworkingicons-regul-webfont.ttf') format('truetype'),
+         url('/mainsite/css/fonts/socialnetworkingicons-regul-webfont.svg#SocialNetworkingIconsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body{
     font-size:16px;
     font-family:'Rosario', Helvetica, Arial, sans-serif;
@@ -430,6 +441,10 @@ td.contact-main{
     width:200px;
     padding:15px 0;
     font-size:20px;
+}
+
+span.contact-symbol{
+    font-family:"SocialNetworkingIconsRegular";
 }
 
 /* =============================================================================
