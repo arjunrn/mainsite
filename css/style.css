@@ -200,19 +200,6 @@ table { border-collapse: collapse; border-spacing: 0; }
    Primary styles
    Author: 
    ========================================================================== */
-
-
-@font-face {
-    font-family: 'SocialNetworkingIconsRegular';
-    src: url('/mainsite/css/fonts/socialnetworkingicons-regul-webfont.eot');
-    src: url('/mainsite/css/fonts/socialnetworkingicons-regul-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/mainsite/css/fonts/socialnetworkingicons-regul-webfont.woff') format('woff'),
-         url('/mainsite/css/fonts/socialnetworkingicons-regul-webfont.ttf') format('truetype'),
-         url('/mainsite/css/fonts/socialnetworkingicons-regul-webfont.svg#SocialNetworkingIconsRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 body{
     font-size:16px;
     font-family:'Rosario', Helvetica, Arial, sans-serif;
@@ -333,12 +320,30 @@ ul.navigation-list li{float:left;margin:0px 100px;}
     color:#9c4141;
 }
 
-div.main-section{padding:20px 0;}
+div.main-section{padding:20px 0;float:left;}
+div.main-section p{margin:0px;}
+div.main-section h1, div.main-section h2, div.main-section h3, div.main-section h4, div.main-section h5, div.main-section h6{margin:0;}
 div.res-right , div.res-left{float:left;}
 div.res-left{width:200px;padding-top:20px;}
 div.res-right{width:660px;}
+div.res-personal{float:right;}
+div.res-personal div.res-right p{margin:5px 0;}
+div.res-education{margin:10px 0;float:left;}
+div.res-education h3.education-heading{margin:15px 0 3px;}
+div.res-education h4.institution-name{margin-bottom:10px;}
+
+div.res-experience{
+    float:left;
+    clear:both;
+    margin:30px 0;
+}
+
+div.res-experience h3.job-title{margin:10px 3px;}
+
+div.res-skills{float:left;margin:30px 0;}
 
 li.main-skill{display:block;width:270px;}
+li.main-skill ul{margin:0;}
 li.skill-odd{clear:left;float:left;}
 li.skill-even{clear:right;float:right;}
 
