@@ -330,18 +330,18 @@ div.res-right{width:660px;}
 div.res-personal{float:right;}
 div.res-personal div.res-right p{margin:5px 0;}
 div.res-education{margin:10px 0;float:left;}
-div.main-section p.edu-duration{font-style:italics;}
+div.main-section p.edu-duration{font-style:italic;margin:0 0 10px;}
 div.res-education h3.education-heading{margin:15px 0 3px;}
-div.res-education h4.institution-name{margin-bottom:10px;}
-
+div.res-education h4.institution-name{margin:5px 0 0;}
+div.res-education p.edu-desc{padding-bottom:20px;border-bottom:1px dotted;}
 div.res-experience{
     float:left;
     clear:both;
     margin:30px 0;
 }
 
-div.res-experience h3.job-title{margin:10px 3px;}
-
+div.res-experience h3.job-title{font-size:20px;}
+div.res-experience p.job-duration{font-style:italic; padding-bottom: 20px;}
 div.res-skills{float:left;margin:30px 0;}
 
 li.main-skill{display:block;width:270px;}
