@@ -322,6 +322,7 @@ ul.navigation-list li{float:left;margin:0px 100px;}
 
 div.main-section{padding:20px 0;float:left;}
 div.main-section p{margin:0px;}
+
 div.main-section h1, div.main-section h2, div.main-section h3, div.main-section h4, div.main-section h5, div.main-section h6{margin:0;}
 div.res-right , div.res-left{float:left;}
 div.res-left{width:200px;padding-top:20px;}
@@ -329,6 +330,7 @@ div.res-right{width:660px;}
 div.res-personal{float:right;}
 div.res-personal div.res-right p{margin:5px 0;}
 div.res-education{margin:10px 0;float:left;}
+div.main-section p.edu-duration{font-style:italics;}
 div.res-education h3.education-heading{margin:15px 0 3px;}
 div.res-education h4.institution-name{margin-bottom:10px;}
 
