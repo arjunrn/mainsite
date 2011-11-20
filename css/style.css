@@ -201,15 +201,15 @@ table { border-collapse: collapse; border-spacing: 0; }
    Author: 
    ========================================================================== */
 body{
-    font-size:16px;
-    font-family:'Rosario', Helvetica, Arial, sans-serif;
+    font-size:18px;
+    font-family:'Forum', Helvetica, Arial, sans-serif;
     background-color:#22435A;
     color:#FFF;
 }
 h1, h2, h3, h4, h5, h6 {
     color:#FFFFFF;
-    font-family: 'Prociono', Georgia, Times, serif;
-    text-shadow:1px 1px 0 #222222;
+    font-family: 'Forum', Georgia, Times, serif;
+    //text-shadow:1px 1px 0 #222222;
 }
 a{
     color:#452F34;
@@ -266,6 +266,7 @@ div#navigation{
         color-stop(0.89, rgb(224,224,224))
     );
     box-shadow: 0 5px 5px #999;
+    opacity:0.9;
 }
 ul.navigation-list{
     list-style:none;
@@ -276,11 +277,12 @@ ul.navigation-list{
 }
 ul.navigation-list a, ul.navigation-list a:hover , ul.navigation-list a:visited{
     color:#222;
-    text-shadow:1px 1px 2px #444;
+    //text-shadow:1px 1px 2px #444;
     font-weight:normal;
     font-size:20px;
+    font-weight:bold;
 }
-ul.navigation-list li{float:left;margin:0px 100px;}
+ul.navigation-list li{float:left;margin:0px 80px;}
 
 	
     
@@ -293,7 +295,7 @@ ul.navigation-list li{float:left;margin:0px 100px;}
     margin:5px;
     float:left;
     clear:both;
-    text-shadow: 2px 2px 3px #AAA;
+    //text-shadow: 2px 2px 3px #AAA;
 }
 #caption{
     font-size:35px;
@@ -302,7 +304,15 @@ ul.navigation-list li{float:left;margin:0px 100px;}
     clear:both;
 }
 
-
+p.intro-text{
+	-moz-column-count: 3;
+	-moz-column-gap: 20px;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 20px;
+	column-count: 3;
+	column-gap: 20px;
+	text-align:justify;
+}
 #main{
 	clear:both;
 	width:860px;
