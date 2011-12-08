@@ -202,13 +202,13 @@ table { border-collapse: collapse; border-spacing: 0; }
    ========================================================================== */
 body{
     font-size:18px;
-    font-family:'Forum', Helvetica, Arial, sans-serif;
+    font-family:'PT Sans', Helvetica, Arial, sans-serif;
     background-color:#22435A;
     color:#FFF;
 }
 h1, h2, h3, h4, h5, h6 {
     color:#FFFFFF;
-    font-family: 'Forum', Georgia, Times, serif;
+    font-family: 'Prociono', Georgia, Times, serif;
     //text-shadow:1px 1px 0 #222222;
 }
 a{
@@ -240,7 +240,7 @@ div.header-left{
     -webkit-border-radius:5px;
     border-radius:5px;
 }
-div.header-right{width:680px;}
+div.header-right{width:100%;}
 
 div#navigation{
     position:fixed;
@@ -250,7 +250,7 @@ div#navigation{
     clear:both;
     margin:0;
     padding:0;
-    height:35px;
+    height:50px;
     background-image: linear-gradient(bottom, rgb(166,166,166) 30%, rgb(201,201,201) 65%, rgb(224,224,224) 89%);
     background-image: -o-linear-gradient(bottom, rgb(166,166,166) 30%, rgb(201,201,201) 65%, rgb(224,224,224) 89%);
     background-image: -moz-linear-gradient(bottom, rgb(166,166,166) 30%, rgb(201,201,201) 65%, rgb(224,224,224) 89%);
@@ -266,23 +266,39 @@ div#navigation{
         color-stop(0.89, rgb(224,224,224))
     );
     box-shadow: 0 5px 5px #999;
+    -moz-box-shadow: 0 5px 5px #999;
+    -webkit-box-shadow: 0 5px 5px #999;
     opacity:0.9;
 }
 ul.navigation-list{
     list-style:none;
-    margin: 5px auto;
+    margin: 13px auto 0;
     padding:0;
     display:block;
     width:800px;
 }
 ul.navigation-list a, ul.navigation-list a:hover , ul.navigation-list a:visited{
     color:#222;
-    //text-shadow:1px 1px 2px #444;
+    text-shadow:1px 1px 2px #444;
+    -moz-text-shadow:1px 1px 2px #444;
+    -webkit-text-shadow:1px 1px 2px #444;
     font-weight:normal;
     font-size:20px;
-    font-weight:bold;
+    font-weight:normal;
+    box-shadow: 0 1px 6px #222222;
+    -moz-box-shadow: 0 1px 6px #222222;
+    -webkit-box-shadow: 0 1px 6px #222222;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    padding:5px;
 }
-ul.navigation-list li{float:left;margin:0px 80px;}
+ul.navigation-list a.current-page{
+	box-shadow: inset 0 3px 9px #222222;
+	-moz-box-shadow: inset 0 3px 9px #222222;
+	-webkit-box-shadow: inset 0 3px 9px #222222;
+}
+ul.navigation-list li{float:left;margin:0px 95px;}
 
 	
     
@@ -292,10 +308,12 @@ ul.navigation-list li{float:left;margin:0px 80px;}
 
 #main-title{
     font-size:85px;
-    margin:5px;
-    float:left;
+    margin:5px auto;
     clear:both;
-    //text-shadow: 2px 2px 3px #AAA;
+    width:485px;
+    text-shadow: 2px 2px 3px #AAA;
+    -moz-text-shadow: 2px 2px 3px #AAA;
+    -webkit-text-shadow: 2px 2px 3px #AAA;
 }
 #caption{
     font-size:35px;
@@ -312,13 +330,16 @@ p.intro-text{
 	column-count: 3;
 	column-gap: 20px;
 	text-align:justify;
+	-moz-hyphens:auto;
+	-webkit-hyphens:auto;
+	hyphens:auto;
+	padding:70px 0 70px;
 }
 #main{
 	clear:both;
 	width:860px;
 	margin:0 auto;
 	border-radius:15px;
-	padding:15px;
 }
 
 #main a, #main a:visited{
@@ -360,13 +381,36 @@ li.skill-odd{clear:left;float:left;}
 li.skill-even{clear:right;float:right;}
 
 td.contact-main{
-    width:200px;
+    width:150px;
     padding:15px 0;
     font-size:20px;
 }
 
+td.contact-description{
+	width:450px;
+	-moz-hyphens:auto;
+	text-align:justify;
+}
+
 span.contact-symbol{
     font-family:"SocialNetworkingIconsRegular";
+}
+
+footer{
+	clear:both;
+	margin:80px auto 0;
+	width:860px;
+	border-top:1px dashed;
+	padding:10px 0;
+}
+
+footer p{
+	width:200px;
+	margin:0px auto;
+}
+
+table.contact-table{
+	margin:10px 140px 80px;
 }
 
 /* =============================================================================
