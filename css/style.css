@@ -284,13 +284,13 @@ ul.navigation-list a, ul.navigation-list a:hover , ul.navigation-list a:visited{
     -webkit-text-shadow:1px 1px 2px #444;
     font-weight:normal;
     font-weight:normal;
-    padding:5px;
+    padding:15px 0;
     font-size:18px;
-    width:70px;
+    width:100%;
     overflow: hidden;
     text-align:center;
     display: block;
-    margin:10px auto;
+    margin:0px auto;
 }
 ul.navigation-list li.current-page{
     background-image: linear-gradient(bottom, rgb(89,89,89) 17%, rgb(133,133,133) 56%, rgb(168,168,168) 82%);
