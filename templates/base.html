@@ -13,34 +13,31 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	
-	<link href='http://fonts.googleapis.com/css?family=Prociono|PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:300|Lato:300' rel='stylesheet' type='text/css'>
     
-	<link rel="stylesheet" href="css/style.css">
-    <script src="http://localhost:8001/vogue-client.js" type="text/javascript"></script>
-	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+	<link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/libs/modernizr-2.0.6.min.js"></script>
 </head>
 <body>
 <a name="home"></a>
 <div id="container">
 	<header>
-		<div class="header-right">
-			<h1 id="main-title">Arjun Naik</h1>
-			<div id="navigation">
+		<div id="navigation">
+            
+            <div class="navigation-items-container">
+                <h1 id="main-title">Arjun Naik</h1>
                 <ul class="navigation-list">
-                    <li class="current-page"><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li {% if currentpage == 'home' %}class="current-page"{% endif %}><a href="/">Home</a></li>
+                    <li {% if currentpage == 'resume' %}class="current-page"{% endif %}><a href="/resume">Resume</a></li>
+                    <li {% if currentpage == 'contact' %}class="current-page"{% endif %}><a href="/contact">Contact</a></li>
                 </ul>
             </div>
         </div>
-		
-	</header>
+    </header>
+	
 	<div id="main" role="main">
-		<div class="main-section">
-			<p class="intro-text">
-				I am an software developer living in Bangalore. For the past year I have been working for Notikum Pte. Ltd. I work primarily in the area of User Experience and User Interface development. I also develop Android Applications. I am interested in Python and Javascript. In 2010 I graduated from BM Sreenivasaiah College of Engineering here in Bangalore. Outside work my other interests are Science-Fiction and my favourite author is Issac Asimov. On this site you can find my resume and some of the projects I have worked on or am currently working on. I haven't recorded everything I have worked on so the source code is not available right now. If you need any information about my projects or want to collaborate on any project please get in touch with me.
-			</p>
-		</div>
+		{% block "content" %}
+		{% endblock %}
 	</div>
 	<footer>
         <p>&copy; 2011 Arjun Naik</p>
