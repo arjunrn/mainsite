@@ -521,7 +521,76 @@ table.contact-table{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  /* Style adjustments for viewports 768px and over go here */
+  div.navigation-items-container{
+    width:580px;
+    margin:0 auto;
+  }
+    #main-title{
+      width:210px;
+      font-size:35px;
+    }
+
+    ul.navigation-list{
+      width:360px
+    }
+
+      ul.navigation-list li{
+        width:115px;
+        font-size:10px;
+      }
+
+  #main{
+    width:580px;
+  }
+
+    p.intro-text {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+        -moz-hyphens:auto;
+        -webkit-hyphens:auto;
+        hyphens:auto;
+        padding:25px 0;
+    }
+
+    div.res-left{
+      font-size:14px;
+      width:200px;
+      padding:5px 0;
+    }
+
+    div.res-right{
+      width:380px;
+    }
+
+      li.main-skill{
+        width:170px;
+      }
+
+        li.main-skill ul{
+          padding:0 0 0 15px;
+        }
+
+
+    table.contact-table{
+      margin:20px 10px;
+    }
+      td.contact-main{
+        width:80px;
+        padding-right:5px;
+        font-size:1.2em;
+      }
+
+  footer{
+    width:580px;
+  }
+
+}
+
+@media only screen and (max-width: 599px) {
   /* Style adjustments for viewports 480px and over go here */
   
   div.navigation-items-container{
@@ -593,10 +662,7 @@ table.contact-table{
 
 }
 
-@media only screen and (min-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
 
-}
 
 
 /* =============================================================================
